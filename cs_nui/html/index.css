@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    --background: #15202bd2;
+    --card: #192734;
+    --hover: #22303c60;
+    --primary: #FFFFFF;
+    --secondary: #219bf8;
+    user-select: none;
+    font-family: "Roboto";
+    font-weight: 100;
+    overflow: hidden;
+    background-color: transparent;
+    visibility: hidden;
+}
+@keyframes expand {
+    0% {
+        top: 90%;
+    }
+    50% {
+        top: 89%;
+    }
+    100% {
+        top: 90%;
+    }
+}
+.nui-message-wrapper {
+    transition: all 1s ease;
+    position: absolute;
+    background-color: var(--background);
+    width: 30rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 0.3rem;
+    animation: expand 2s ease infinite;
+    -webkit-box-shadow: 0px 0px 27px 5px #222222; 
+    box-shadow: 0px 0px 27px 5px #1f1f1f;
+}
+h1 {
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 15px #868686;
+}
+h2 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 15px #646464;
+}
+h3 {
+    color: var(--primary);
+    font-size: 1rem;
+    margin-top: -0.00001rem;
+    text-shadow: 2px 2px 15px #2e2e2e;
+}
+.nui-content {
+    margin-top: -0.5rem;
+}
+svg {
+    margin-top: -0.5rem;
+    width: 2rem;
+    height: 2rem;
+    fill: var(--secondary);
+}
